@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Datos Inmutables</title>
+</head>
+<body>
+    <script>
+        const jhon = {
+            nombre: 'Jhon leider',
+            apellido: 'Guerero Perez',
+            edad: 33
+        }
+
+        const cumpleañosInmutable = persona => ({
+            ...persona,
+            edad: persona.edad + 1
+        })
+    </script>
+</body>
+</html>
